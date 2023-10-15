@@ -1,0 +1,10 @@
+# Ignore everything
+*
+
+# Except
+!cmdline\.txt
+!config\.txt
+!init\.c
+!output\.txt
+!README.md
+!.gitignore

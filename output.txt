@@ -1,0 +1,321 @@
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 6.5.7 (uros@uros-debian-desktop) (arm-linux-gnueabihf-gcc (Debian 10.2.1-6) 10.2.1 202101
+10, GNU ld (GNU Binutils for Debian) 2.35.2) #4 Sat Oct 14 18:55:02 PDT 2023
+[    0.000000] CPU: ARMv6-compatible processor [410fb767] revision 7 (ARMv7), cr=00c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT nonaliasing instruction cache
+[    0.000000] OF: fdt: Machine model: Raspberry Pi Zero Rev 1.2
+[    0.000000] random: crng init done
+[    0.000000] Memory policy: Data cache writeback
+[    0.000000] Reserved memory: created CMA memory pool at 0x0bc00000, size 256 MiB
+[    0.000000] OF: reserved mem: initialized node linux,cma, compatible id shared-dma-pool
+[    0.000000] OF: reserved mem: 0x0bc00000..0x1bbfffff (262144 KiB) map reusable linux,cma
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000000000000-0x000000001bffffff]
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000000000000-0x000000001bffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000000000000-0x000000001bffffff]
+[    0.000000] CPU: All CPU(s) started in SVC mode.
+[    0.000000] Kernel command line: coherent_pool=1M snd_bcm2835.enable_headphones=0 snd_bcm2835.enable_hdmi=1 snd_bcm
+2835.enable_hdmi=0  smsc95xx.macaddr=B8:27:EB:0E:B0:26 vc_mem.mem_base=0x1ec00000 vc_mem.mem_size=0x20000000  console=
+ttyAMA0,115200 ramdisk_size=65536 root=/dev/ram0 rw init=/init rootwait
+[    0.000000] Unknown kernel command line parameters "ramdisk_size=65536", will be passed to user space.
+[    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes, linear)
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 113792
+[    0.000000] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.000000] Memory: 175216K/458752K available (9216K kernel code, 1600K rwdata, 2888K rodata, 1024K init, 555K bss,
+ 21392K reserved, 262144K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] ftrace: allocating 34208 entries in 67 pages
+[    0.000000] ftrace: allocated 67 pages with 3 groups
+[    0.000000] trace event string verifier disabled
+[    0.000000] NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+[    0.000007] sched_clock: 32 bits at 1000kHz, resolution 1000ns, wraps every 2147483647500ns
+[    0.000072] clocksource: timer: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275 ns
+[    0.000178] bcm2835: system timer (irq = 27)
+[    0.001431] Console: colour dummy device 80x30
+[    0.001528] Calibrating delay loop... 697.95 BogoMIPS (lpj=3489792)
+[    0.060320] CPU: Testing write buffer coherency: ok
+[    0.060419] pid_max: default: 32768 minimum: 301
+[    0.060866] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[    0.060908] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[    0.063995] RCU Tasks Rude: Setting shift to 0 and lim to 1 rcu_task_cb_adjust=1.
+[    0.064322] Setting up static identity map for 0x100000 - 0x100054
+[    0.066865] devtmpfs: initialized
+[    0.084369] VFP support v0.3: implementor 41 architecture 1 part 20 variant b rev 5
+[    0.084861] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.084917] futex hash table entries: 256 (order: -1, 3072 bytes, linear)
+[    0.124436] pinctrl core: initialized pinctrl subsystem
+[    0.126713] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+[    0.130313] DMA: preallocated 1024 KiB pool for atomic coherent allocations
+[    0.136984] thermal_sys: Registered thermal governor 'step_wise'
+[    0.138168] No ATAGs?
+[    0.138196] hw-breakpoint: found 6 breakpoint and 1 watchpoint registers.
+[    0.138216] hw-breakpoint: maximum watchpoint size is 4 bytes.
+[    0.139165] Serial: AMBA PL011 UART driver
+[    0.207412] SCSI subsystem initialized
+[    0.207932] usbcore: registered new interface driver usbfs
+[    0.208045] usbcore: registered new interface driver hub
+[    0.208161] usbcore: registered new device driver usb
+[    0.208534] usb_phy_generic phy: dummy supplies not allowed for exclusive requests
+[    0.209101] mc: Linux media interface: v0.10
+[    0.209267] videodev: Linux video capture interface: v2.00
+[    0.209418] pps_core: LinuxPPS API ver. 1 registered
+[    0.209435] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.209507] PTP clock support registered
+[    0.215997] clocksource: Switched to clocksource timer
+[    0.241602] NET: Registered PF_INET protocol family
+[    0.241989] IP idents hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    0.244323] tcp_listen_portaddr_hash hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[    0.244392] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.244435] TCP established hash table entries: 4096 (order: 2, 16384 bytes, linear)
+[    0.244517] TCP bind hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    0.244630] TCP: Hash tables configured (established 4096 bind 4096)
+[    0.244812] UDP hash table entries: 256 (order: 0, 4096 bytes, linear)
+[    0.244866] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes, linear)
+[    0.245181] NET: Registered PF_UNIX/PF_LOCAL protocol family
+[    0.251506] armv6-pmu arm-pmu: hw perfevents: no irqs for PMU, sampling events not supported
+[    0.251585] hw perfevents: enabled with armv6_1176 PMU driver, 3 counters available
+[    0.254252] Initialise system trusted keyrings
+[    0.296752] Unpacking initramfs...
+[    0.307860] workingset: timestamp_bits=30 max_order=17 bucket_order=0
+[    0.653119] Freeing initrd memory: 236K
+[    0.699295] Key type asymmetric registered
+[    0.699335] Asymmetric key parser 'x509' registered
+[    0.699587] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+[    0.699614] io scheduler mq-deadline registered
+[    0.699658] io scheduler kyber registered
+[    0.699762] io scheduler bfq registered
+[    0.713085] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[    0.719965] bcm2835-rng 20104000.rng: hwrng registered
+[    0.721747] bcm2835-power bcm2835-power: Broadcom BCM2835 power domains driver
+[    0.728800] usbcore: registered new interface driver zd1211rw
+[    0.728947] usbcore: registered new interface driver lan78xx
+[    0.729049] usbcore: registered new interface driver asix
+[    0.729150] usbcore: registered new interface driver ax88179_178a
+[    0.729248] usbcore: registered new interface driver cdc_ether
+[    0.729368] usbcore: registered new interface driver smsc95xx
+[    0.729514] usbcore: registered new interface driver net1080
+[    0.729619] usbcore: registered new interface driver cdc_subset
+[    0.729722] usbcore: registered new interface driver zaurus
+[    0.729867] usbcore: registered new interface driver cdc_ncm
+[    0.729970] usbcore: registered new interface driver r8153_ecm
+[    0.730903] usbcore: registered new interface driver usb-storage
+[    0.731255] UDC core: g_ether: couldn't find an available UDC
+[    0.731351] UDC core: g_serial: couldn't find an available UDC
+[    0.731781] i2c_dev: i2c /dev entries driver
+[    0.738774] bcm2835-wdt bcm2835-wdt: Broadcom BCM2835 watchdog timer
+[    0.739649] sdhci: Secure Digital Host Controller Interface driver
+[    0.739669] sdhci: Copyright(c) Pierre Ossman
+[    0.740832] sdhci-pltfm: SDHCI platform and OF driver helper
+[    0.743159] ledtrig-cpu: registered to indicate activity on CPUs
+[    0.743934] usbcore: registered new interface driver usbhid
+[    0.743961] usbhid: USB HID core driver
+[    0.744193] bcm2835_vchiq 2000b840.mailbox: there is not valid maps for state default
+[    0.745162] bcm2835-mbox 2000b880.mailbox: mailbox enabled
+[    0.746508] NET: Registered PF_INET6 protocol family
+[    0.748736] Segment Routing with IPv6
+[    0.748857] In-situ OAM (IOAM) with IPv6
+[    0.749033] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    0.750528] NET: Registered PF_PACKET protocol family
+[    0.774018] Loading compiled-in X.509 certificates
+[    0.800482] 20201000.serial: ttyAMA0 at MMIO 0x20201000 (irq = 81, base_baud = 0) is a PL011 rev2
+[    0.800591] printk: console [ttyAMA0] enabled
+[    1.553931] raspberrypi-firmware soc:firmware: Attached to firmware from 2023-08-10T15:35:01
+[    1.572547] bcm2835_vchiq 2000b840.mailbox: there is not valid maps for state default
+[    1.580613] sdhost-bcm2835 20202000.mmc: loaded - DMA enabled (>1)
+[    1.609165] cfg80211: Loading compiled-in X.509 certificates for regulatory database
+[    1.621433] Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+[    1.627755] platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+[    1.636888] clk: Disabling unused clocks
+[    1.641978] uart-pl011 20201000.serial: no DMA platform data
+[    1.647848] cfg80211: failed to load regulatory.db
+[    1.660254] Freeing unused kernel image (initmem) memory: 1024K
+[    1.667055] Run /init as init process
+Hello from Raspberry!
+============================
+rootfs / rootfs rw 0 0
+
+none /proc proc rw,relatime 0 0
+
+none /dev devtmpfs rw,relatime,size=87608k,nr_inodes=21902,mode=755 0 0
+
+============================
+Listing all devices:
+============================
+.
+..
+vchiq
+ttyAMA0
+watchdog0
+watchdog
+i2c-2
+ttyprintk
+ttyS3
+ttyS2
+ttyS1
+ttyS0
+ptmx
+gpiochip0
+hwrng
+tty63
+tty62
+tty61
+tty60
+tty59
+tty58
+tty57
+tty56
+tty55
+tty54
+tty53
+tty52
+tty51
+tty50
+tty49
+tty48
+tty47
+tty46
+tty45
+tty44
+tty43
+tty42
+tty41
+tty40
+tty39
+tty38
+tty37
+tty36
+tty35
+tty34
+tty33
+tty32
+tty31
+tty30
+tty29
+tty28
+tty27
+tty26
+tty25
+tty24
+tty23
+tty22
+tty21
+tty20
+tty19
+tty18
+tty17
+tty16
+tty[    1.735447] mmc0: host does not support reading read-only switch, assuming write-enable
+15
+tty14
+tty13
+tty12
+tty11
+tty10
+tty9
+tty8
+[    1.748102] mmc0: new high speed SDHC card at address e624
+
+tty6
+tty5
+tty4
+tty3
+tty2
+t[    1.756363] mmcblk0: mmc0:e624 SL08G 7.40 GiB
+ty1
+vcsa1
+vcsu1
+vcs1
+vcsa
+vcsu
+vcs
+tty0
+console
+tty
+km[    1.765869]  mmcblk0: p1 p2
+sg
+urandom
+random
+full
+zero
+port
+null
+mem
+============================
+Chip name: gpiochip0
+Chip label: pinctrl-bcm2835
+Number of lines: 54
+offset: 0, name: ID_SDA, consumer:
+offset: 1, name: ID_SCL, consumer:
+offset: 2, name: SDA1, consumer:
+offset: 3, name: SCL1, consumer:
+offset: 4, name: GPIO_GCLK, consumer:
+offset: 5, name: GPIO5, consumer:
+offset: 6, name: GPIO6, consumer:
+offset: 7, name: SPI_CE1_N, consumer:
+offset: 8, name: SPI_CE0_N, consumer:
+offset: 9, name: SPI_MISO, consumer:
+offset: 10, name: SPI_MOSI, consumer:
+offset: 11, name: SPI_SCLK, consumer:
+offset: 12, name: GPIO12, consumer:
+offset: 13, name: GPIO13, consumer:
+offset: 14, name: TXD0, consumer:
+offset: 15, name: RXD0, consumer:
+offset: 16, name: GPIO16, consumer:
+offset: 17, name: GPIO17, consumer:
+offset: 18, name: GPIO18, consumer:
+offset: 19, name: GPIO19, consumer:
+offset: 20, name: GPIO20, consumer:
+offset: 21, name: GPIO21, consumer:
+offset: 22, name: GPIO22, consumer:
+offset: 23, name: GPIO23, consumer: panicled
+offset: 24, name: GPIO24, consumer:
+offset: 25, name: GPIO25, consumer:
+offset: 26, name: GPIO26, consumer:
+offset: 27, name: GPIO27, consumer:
+offset: 28, name: SDA0, consumer:
+offset: 29, name: SCL0, consumer:
+offset: 30, name: NC, consumer:
+offset: 31, name: NC, consumer:
+offset: 32, name: CAM_GPIO1, consumer:
+offset: 33, name: NC, consumer:
+offset: 34, name: NC, consumer:
+offset: 35, name: NC, consumer:
+offset: 36, name: NC, consumer:
+offset: 37, name: NC, consumer:
+offset: 38, name: NC, consumer:
+offset: 39, name: NC, consumer:
+offset: 40, name: NC, consumer:
+offset: 41, name: CAM_GPIO0, consumer: cam1_regulator
+offset: 42, name: NC, consumer:
+offset: 43, name: NC, consumer:
+offset: 44, name: NC, consumer:
+offset: 45, name: NC, consumer:
+offset: 46, name: HDMI_HPD_N, consumer:
+offset: 47, name: STATUS_LED_N, consumer: ACT
+offset: 48, name: SD_CLK_R, consumer:
+offset: 49, name: SD_CMD_R, consumer:
+offset: 50, name: SD_DATA0_R, consumer:
+offset: 51, name: SD_DATA1_R, consumer:
+offset: 52, name: SD_DATA2_R, consumer:
+offset: 53, name: SD_DATA3_R, consumer:
+Setting high: 0
+Setting low: 0
+Setting high: 1
+Setting low: 1
+Setting high: 2
+Setting low: 2
+[   13.685611] Kernel panic - not syncing: Attempted to kill init! exitcode=0x00000000
+[   13.693330] CPU: 0 PID: 1 Comm: init Not tainted 6.5.7 #4
+[   13.698753] Hardware name: BCM2835
+[   13.702181]  unwind_backtrace from show_stack+0x18/0x1c
+[   13.707471]  show_stack from dump_stack_lvl+0x24/0x2c
+[   13.712575]  dump_stack_lvl from panic+0xf0/0x314
+[   13.717334]  panic from do_exit+0x1d8/0x87c
+[   13.721581]  do_exit from sys_exit_group+0x0/0x18
+[   13.726324]  sys_exit_group from __wake_up_parent+0x0/0x1c
+[   13.731850] ---[ end Kernel panic - not syncing: Attempted to kill init! exitcode=0x00000000 ]---
+
